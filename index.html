@@ -2,13 +2,24 @@
 <html>
   <head>
     <title>Country App</title>
-    <script src='app.js'></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="map.js"></script>
+    <script src='app_answer.js'></script>
   </head>
   <body>
-    <h1>Countries</h1>
+  <!--   <h1>Countries</h1>
     <form id="select-form">
     <select id='country-list'>
     </select>
-    </form>
+    </form> -->
+    <select style="display:none" id="countries"></select>
+    <button id="button">Current Location</button>
+    <div id="info" style="display:none">
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+    <div id="map"></div>
   </body>
 </html>
